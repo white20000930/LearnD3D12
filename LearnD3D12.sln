@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_Box", "06_Box\06_Box.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_Shapes", "06_Shapes\06_Shapes.vcxproj", "{6BFBB1FC-BCEC-43A8-9E90-7D1D3E1CCD10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StencilDemo", "StencilDemo\StencilDemo.vcxproj", "{A9A058B2-70E0-4227-88EF-C9C33F0578E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{6BFBB1FC-BCEC-43A8-9E90-7D1D3E1CCD10}.Release|x64.Build.0 = Release|Win32
 		{6BFBB1FC-BCEC-43A8-9E90-7D1D3E1CCD10}.Release|x86.ActiveCfg = Release|Win32
 		{6BFBB1FC-BCEC-43A8-9E90-7D1D3E1CCD10}.Release|x86.Build.0 = Release|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Debug|x64.ActiveCfg = Debug|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Debug|x64.Build.0 = Debug|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Debug|x86.Build.0 = Debug|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Release|x64.ActiveCfg = Release|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Release|x64.Build.0 = Release|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Release|x86.ActiveCfg = Release|Win32
+		{A9A058B2-70E0-4227-88EF-C9C33F0578E3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

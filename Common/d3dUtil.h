@@ -141,6 +141,14 @@ public:
 // and data needed to draw a subset of geometry stores in the vertex and index
 // buffers so that we can implement the technique described by Figure 6.3.
 struct SubmeshGeometry {
+    SubmeshGeometry() = default;
+    // 索引个数，索引起始，基础顶点起始（无用，可能是用于合并多个几何体的）
+    SubmeshGeometry(UINT iIndexCount, UINT iStartIndexLocation, INT iBaseVertexLocation)
+        : IndexCount(iIndexCount)
+        , StartIndexLocation(iStartIndexLocation)
+        , BaseVertexLocation(iBaseVertexLocation) {
+        };
+
     UINT IndexCount = 0;
     UINT StartIndexLocation = 0;
     INT BaseVertexLocation = 0;
@@ -215,12 +223,12 @@ struct Light {
 #define MaxLights 16
 
 struct MaterialConstants {
-    DirectX::XMFLOAT4 DiffuseAlbedo = { 1.0f, 1.0f, 1.0f, 1.0f };
-    DirectX::XMFLOAT3 FresnelR0 = { 0.01f, 0.01f, 0.01f };
-    float Roughness = 0.25f;
+    DirectX::XMFLOAT4 DiffuseAlbedo = { 1.0f, 1.0f, 1.0f, 1.0f }; // 漫反射反照率
+    DirectX::XMFLOAT3 FresnelR0 = { 0.01f, 0.01f, 0.01f }; // 菲涅尔反射系数
+    float Roughness = 0.25f; // 粗糙度
 
     // Used in texture mapping.
-    DirectX::XMFLOAT4X4 MatTransform = MathHelper::Identity4x4();
+    DirectX::XMFLOAT4X4 MatTransform = MathHelper::Identity4x4(); // 纹理变换矩阵
 };
 
 // Simple struct to represent a material for our demos.  A production 3D engine
